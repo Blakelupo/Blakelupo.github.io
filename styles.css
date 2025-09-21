@@ -400,7 +400,7 @@ section {
 }
 
 .education-field {
-    background-color: #1e293b;
+    background-color: #0f172a;
 }
 
 /* Projects Section */
@@ -442,7 +442,7 @@ section {
 
 .project-logo-arr {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 12px;
     justify-content: center;
     align-items: center;
@@ -450,7 +450,7 @@ section {
 }
 
 .project-logo-arr img {
-    max-height: 80px; /* Keeps logos uniform in height */
+    max-height: 100px; /* Keeps logos uniform in height */
     width: auto;       /* Preserves aspect ratio */
     object-fit: contain;
     padding: 4px;
