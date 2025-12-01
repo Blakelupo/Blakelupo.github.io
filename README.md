@@ -42,3 +42,7 @@ Selected Projects & Labs
 - Wazuh — open-source SIEM/XDR platform used as a forensic playground for endpoint telemetry, log analysis, and incident response practice.
 	- Website: https://wazuh.com/
 	- GitHub: https://github.com/wazuh
+
+- Security Onion - is a free and open-source Linux distribution designed for threat hunting, enterprise security monitoring, and log management
+	- Website: https://securityonionsolutions.com/
+	- GitHub: https://github.com/Security-Onion-Solutions/securityonion
