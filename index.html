@@ -1,328 +1,470 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blake Lupo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Blake Lupo</h2>
-            </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Blake Lupo</h2>
         </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Welcome to My Portfolio</h1>
-                <p class="hero-subtitle">Showcasing my certifications and personal projects</p>
-                <div class="hero-buttons">
-                    <a href="#certifications" class="btn btn-primary">View Certifications</a>
-                    <a href="#projects" class="btn btn-secondary">See Projects</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-picture">
-                    <img src="assets/me.JPG" alt="Blake Lupo Profile Picture" />
-                </div>
-            </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Welcome to My Portfolio</h1>
+          <p class="hero-subtitle">
+            Showcasing my certifications and personal projects
+          </p>
+          <div class="hero-buttons">
+            <a href="#certifications" class="btn btn-primary"
+              >View Certifications</a
+            >
+            <a href="#projects" class="btn btn-secondary">See Projects</a>
+          </div>
         </div>
+        <div class="hero-image">
+          <div class="profile-picture">
+            <img src="assets/me.JPG" alt="Blake Lupo Profile Picture" />
+          </div>
+        </div>
+        <!-- TryHackMe -->
+        <div class="iframe-container">
+          <iframe
+            id="tryhackme"
+            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=96288"
+            style="border: none"
+            width="100%;"
+          ></iframe>
+        </div>
+      </div>
     </section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Certifications</h2>
-                <p class="section-subtitle">Professional certifications and achievements</p>
-            </div>
-            <div class="certifications-grid">   
-                <!-- Certification items will be added here -->
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="assets/Plus_A_Certification.svg" alt="CompTIA A+ Certification" />
-                    </div>
-                    <h3 class="cert-title">CompTIA A+ Certification</h3>
-                    <p class="cert-description">IT fundamentals and technical support skills</p>
-                </div>
-                
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="assets/Plus_Network_Certification.svg" alt="CompTIA Network+ Certification" />
-                    </div>
-                    <h3 class="cert-title">CompTIA Network+ Certification</h3>
-                    <p class="cert-description">Network infrastructure and troubleshooting</p>
-                </div>
-                
-                <div class="cert-item">
-                    <div class="cert-logo"> 
-                        <img src="assets/Plus_Security_Certification.svg" alt="CompTIA Security+ Certification" />
-                    </div>
-                    <h3 class="cert-title">CompTIA Security+ Certification</h3>
-                    <p class="cert-description">Cybersecurity fundamentals and best practices</p>
-                </div>
-                
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="assets/Plus_CySA_Certification.svg" alt="CompTIA CySA+ Certification" />
-                    </div>
-                    <h3 class="cert-title">CompTIA CySA+ Certification</h3>
-                    <p class="cert-description">Cybersecurity analyst and threat detection</p>
-                </div>
-                
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="assets/Plus_PenTest_Certification.svg" alt="CompTIA PenTest+ Certification" />
-                    </div>
-                    <h3 class="cert-title">CompTIA PenTest+ Certification</h3>
-                    <p class="cert-description">Penetration testing and vulnerability assessment</p>
-                </div>
-                
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="assets/Plus_Project_Certification.svg" alt="CompTIA Project+ Certification" />
-                    </div>
-                    <h3 class="cert-title">CompTIA Project+ Certification</h3>
-                    <p class="cert-description">Project management fundamentals</p>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="assets/SSCP.png" alt="Secure Systems Certified Practitioner">
-                    </div>
-                    <h3 class="cert-title">ISC2 SSCP Certification</h3>
-                    <p class="cert-description">Systems Security Certified Practitioner</p>
-                </div>
-
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="assets/Essentials-Linux.svg" alt="Linux Essentials Certification" />
-                    </div>
-                    <h3 class="cert-title">Linux Essentials Certification</h3>
-                    <p class="cert-description">Linux operating system fundamentals</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">
+            Professional certifications and achievements
+          </p>
         </div>
+        <div class="certifications-grid">
+          <!-- Certification items will be added here -->
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/Plus_A_Certification.svg"
+                alt="CompTIA A+ Certification"
+              />
+            </div>
+            <h3 class="cert-title">CompTIA A+ Certification</h3>
+            <p class="cert-description">
+              IT fundamentals and technical support skills
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/Plus_Network_Certification.svg"
+                alt="CompTIA Network+ Certification"
+              />
+            </div>
+            <h3 class="cert-title">CompTIA Network+ Certification</h3>
+            <p class="cert-description">
+              Network infrastructure and troubleshooting
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/Plus_Security_Certification.svg"
+                alt="CompTIA Security+ Certification"
+              />
+            </div>
+            <h3 class="cert-title">CompTIA Security+ Certification</h3>
+            <p class="cert-description">
+              Cybersecurity fundamentals and best practices
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/Plus_CySA_Certification.svg"
+                alt="CompTIA CySA+ Certification"
+              />
+            </div>
+            <h3 class="cert-title">CompTIA CySA+ Certification</h3>
+            <p class="cert-description">
+              Cybersecurity analyst and threat detection
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/Plus_PenTest_Certification.svg"
+                alt="CompTIA PenTest+ Certification"
+              />
+            </div>
+            <h3 class="cert-title">CompTIA PenTest+ Certification</h3>
+            <p class="cert-description">
+              Penetration testing and vulnerability assessment
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/Plus_Project_Certification.svg"
+                alt="CompTIA Project+ Certification"
+              />
+            </div>
+            <h3 class="cert-title">CompTIA Project+ Certification</h3>
+            <p class="cert-description">Project management fundamentals</p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/SSCP.png"
+                alt="Secure Systems Certified Practitioner"
+              />
+            </div>
+            <h3 class="cert-title">ISC2 SSCP Certification</h3>
+            <p class="cert-description">
+              Systems Security Certified Practitioner
+            </p>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-logo">
+              <img
+                src="assets/Essentials-Linux.svg"
+                alt="Linux Essentials Certification"
+              />
+            </div>
+            <h3 class="cert-title">Linux Essentials Certification</h3>
+            <p class="cert-description">Linux operating system fundamentals</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">Academic achievements and qualifications</p>
-            </div>
-            <div class="education-grid">
-                <div class="education-item">
-                    <div class="education-logo">
-                        <img src="assets/WGU.jpg" alt="Western Governors University" />
-                    </div>
-                    <div class="education-content">
-                        <h3 class="education-title">Bachelor of Science in Cybersecurity and Information Assurance</h3>
-                        <p class="education-institution">Western Governors University</p>
-                        <p class="education-description">Comprehensive program covering cybersecurity fundamentals, risk management, network security, and information assurance practices.</p>
-                        <div class="education-details">
-                            <span class="education-degree">Bachelor's Degree</span>
-                            <span class="education-field">Cybersecurity & Information Assurance</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- NCAE Cyber Games achievement card -->
-                <div class="education-item">
-                    <div class="education-logo">
-                        <img src="assets/ncae.png" alt="NCAE Cyber Games" />
-                    </div>
-                    <div class="education-content">
-                        <h3 class="education-title">NCAE Cyber Games — Participant</h3>
-                        <p class="education-institution">National Cyber Apprenticeship/Education Competition</p>
-                        <p class="education-description">Participated in the NCAE Cyber Games, competing in capture-the-flag style challenges focused on applied cybersecurity skills and teamwork. Was voted most improved player for my team.</p>
-                        <div class="education-details">
-                            <span class="education-degree">Blue Team</span>
-                            <span class="education-field">CTF</span>
-                            <span class="education-field">Incident Response</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Academic achievements and qualifications
+          </p>
         </div>
+        <div class="education-grid">
+          <!-- NCAE Cyber Games achievement card -->
+          <div class="education-item">
+            <div class="education-logo">
+              <img src="assets/WGU.jpg" alt="Western Governors University" />
+            </div>
+            <div class="education-content">
+              <h3 class="education-title">
+                Bachelor of Science in Cybersecurity and Information Assurance
+              </h3>
+              <p class="education-institution">Western Governors University</p>
+              <p class="education-description">
+                Comprehensive program covering cybersecurity fundamentals, risk
+                management, network security, and information assurance
+                practices.
+              </p>
+              <div class="education-details">
+                <span class="education-degree">Bachelor's Degree</span>
+                <span class="education-field"
+                  >Cybersecurity & Information Assurance</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- NCAE Cyber Games achievement card -->
+          <div class="education-item">
+            <div class="education-logo">
+              <img src="assets/ncae.png" alt="NCAE Cyber Games" />
+            </div>
+            <div class="education-content">
+              <h3 class="education-title">NCAE Cyber Games — Participant</h3>
+              <p class="education-institution">
+                National Cyber Apprenticeship/Education Competition
+              </p>
+              <p class="education-description">
+                Participated in the NCAE Cyber Games, competing in
+                capture-the-flag style challenges focused on applied
+                cybersecurity skills and teamwork. Was voted most improved
+                player for my team.
+              </p>
+              <div class="education-details">
+                <span class="education-degree">Blue Team</span>
+                <span class="education-field">CTF</span>
+                <span class="education-field">Incident Response</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Personal Projects</h2>
-                <p class="section-subtitle">Home projects and labs that I use to further my knowledge.</p>
-            </div>
-            <div class="projects-grid">
-                <!-- Project items will be added here -->
-                <div class="project-item">
-                    <div class="project-image">
-                        <div class="project-logo">
-                            <img src="assets/Labshock.png" alt="Labshock">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Labshock</h3>
-                        <p class="project-description">"Labshock provides hands-on ICS cybersecurity training, testing and validation." I use labshock to learn more about ICS/OT cybersecurity.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">OT</span>
-                            <span class="tech-tag">ICS</span>
-                            <span class="tech-tag">Scada</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.labshocksecurity.com" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                                Website
-                            </a>
-                            <a href="https://github.com/zakharb/labshock" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <div class="project-logo">
-                            <img src="assets/SecurityOnion.png" alt="Security Onion">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Security Onion</h3>
-                        <p class="project-description">"Security Onion is a free and open-source Linux distribution designed for threat hunting, enterprise security monitoring, and log management."</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">SIEM</span>
-                            <span class="tech-tag">Threat Hunting</span>
-                            <span class="tech-tag">Log Management</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://securityonionsolutions.com/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                                Website
-                            </a>
-                            <a href="https://github.com/Security-Onion-Solutions/securityonion" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-image">
-                        <div class="project-logo-arr">
-                            <img src="assets/Promox.svg" alt="proxmox">
-                            <img src="assets/Portainer.svg" alt="Portainer">
-                            <img src="assets/Jellyfin.svg" alt="Jellyfin">
-                            <img src="assets/Prowlarr.svg" alt="Prowlarr">
-                            <img src="assets/Radarr.svg" alt="Radarr">
-                            <img src="assets/Sonarr.svg" alt="Sonarr">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">arr stack</h3>
-                        <p class="project-description">I use Portainer to orchestrate and manage my self-hosted media stack, leveraging Docker containers for modularity and resilience. The stack includes Plex, Jellyfin, Jellyseerr, Radarr, Sonarr, prowlarr, and qBittorrent</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Self-Hosted</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://wiki.servarr.com" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                                Wiki
-                            </a>
-                            <a href="https://github.com/Lissy93/portainer-templates" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                Github Portainer Templates
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-item">
-                    <div class="project-image">
-                        <div class="project-logo">
-                            <img src="assets/Wazuh.png" alt="Wazuh">
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Wazuh</h3>
-                        <p class="project-description">"The Open Source Security Platform. Unified XDR and SIEM protection for endpoints and cloud workloads." I use Wazuh as a forensic playground to deepen my understanding of SIEM, XDR, and endpoint protection. By deploying Wazuh agents across my home lab, I simulate real-world threats, monitor system activity, and analyze logs for anomaly detection.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">SIEM</span>
-                            <span class="tech-tag">Forensics</span>
-                            <span class="tech-tag">Incident Response</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://wazuh.com/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-external-link-alt"></i>
-                                Website
-                            </a>
-                            <a href="https://github.com/wazuh" class="project-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Personal Projects</h2>
+          <p class="section-subtitle">
+            Home projects and labs that I use to further my knowledge.
+          </p>
         </div>
+        <div class="projects-grid">
+          <!-- Labshock -->
+          <div class="project-item">
+            <div class="project-image">
+              <div class="project-logo">
+                <img src="assets/Labshock.png" alt="Labshock" />
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Labshock</h3>
+              <p class="project-description">
+                "Labshock provides hands-on ICS cybersecurity training, testing
+                and validation." I use labshock to learn more about ICS/OT
+                cybersecurity.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">OT</span>
+                <span class="tech-tag">ICS</span>
+                <span class="tech-tag">Scada</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://www.labshocksecurity.com"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Website
+                </a>
+                <a
+                  href="https://github.com/zakharb/labshock"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Security Onion -->
+          <div class="project-item">
+            <div class="project-image">
+              <div class="project-logo">
+                <img src="assets/SecurityOnion.png" alt="Security Onion" />
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Security Onion</h3>
+              <p class="project-description">
+                "Security Onion is a free and open-source Linux distribution
+                designed for threat hunting, enterprise security monitoring, and
+                log management."
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">SIEM</span>
+                <span class="tech-tag">Threat Hunting</span>
+                <span class="tech-tag">Log Management</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://securityonionsolutions.com/"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Website
+                </a>
+                <a
+                  href="https://github.com/Security-Onion-Solutions/securityonion"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Arr Stack -->
+          <div class="project-item">
+            <div class="project-image">
+              <div class="project-logo-arr">
+                <img src="assets/Promox.svg" alt="proxmox" />
+                <img src="assets/Portainer.svg" alt="Portainer" />
+                <img src="assets/Jellyfin.svg" alt="Jellyfin" />
+                <img src="assets/Prowlarr.svg" alt="Prowlarr" />
+                <img src="assets/Radarr.svg" alt="Radarr" />
+                <img src="assets/Sonarr.svg" alt="Sonarr" />
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">arr stack</h3>
+              <p class="project-description">
+                I use Portainer to orchestrate and manage my self-hosted media
+                stack, leveraging Docker containers for modularity and
+                resilience. The stack includes Plex, Jellyfin, Jellyseerr,
+                Radarr, Sonarr, prowlarr, and qBittorrent
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Self-Hosted</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://wiki.servarr.com"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Wiki
+                </a>
+                <a
+                  href="https://github.com/Lissy93/portainer-templates"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                  Github Portainer Templates
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Wazuh -->
+          <div class="project-item">
+            <div class="project-image">
+              <div class="project-logo">
+                <img src="assets/Wazuh.png" alt="Wazuh" />
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Wazuh</h3>
+              <p class="project-description">
+                "The Open Source Security Platform. Unified XDR and SIEM
+                protection for endpoints and cloud workloads." I use Wazuh as a
+                forensic playground to deepen my understanding of SIEM, XDR, and
+                endpoint protection. By deploying Wazuh agents across my home
+                lab, I simulate real-world threats, monitor system activity, and
+                analyze logs for anomaly detection.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">SIEM</span>
+                <span class="tech-tag">Forensics</span>
+                <span class="tech-tag">Incident Response</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://wazuh.com/"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                  Website
+                </a>
+                <a
+                  href="https://github.com/wazuh"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Always looking for opportunities to learn and collaborate!</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:blakelupo1@gmail.com">Gmail</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/blakelupo">LinkedIn/BlakeLupo</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/Blakelupo">GitHub/Blakelupo</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Always looking for opportunities to learn and collaborate!
+          </p>
         </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:blakelupo1@gmail.com">Gmail</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/blakelupo"
+                >LinkedIn/BlakeLupo</a
+              >
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/Blakelupo">GitHub/Blakelupo</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Blake Lupo. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 Blake Lupo. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
